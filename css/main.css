@@ -49,7 +49,7 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -60,10 +60,10 @@ header {
 
 header h1 {
 	border-bottom: 3px solid #77a466;
-	float: left;
 	margin: 0;
 	padding: 40px 0 20px 0;
 	text-align: center;
+	font-size: 1.875em;
 	
 	
 }
@@ -95,10 +95,9 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: stretch;
 	flex-flow: row wrap;
 	clear: both;
 }
@@ -106,6 +105,7 @@ header nav ul li a{
 .main-image {
 	height: auto;
 	float: left;
+	width: 100%;
 }
 .main-image img {
 	width: 100%;
@@ -131,9 +131,10 @@ header nav ul li a{
 .section-two,
 .section-three {
 	width: 100%;
-	height: auto;
+	flex-basis: auto;
 	float: left;
-	border-top: 1px solid #eee;
+	padding: 0 2px 0 1px;
+	
 }
 
 .section-one h4 {
@@ -143,7 +144,7 @@ header nav ul li a{
 
 .section-two h4,
 .section-three h4 {
-	padding: 0 0 10px;
+	padding: 10px 0;
 }
 
 .menu {
@@ -153,17 +154,18 @@ header nav ul li a{
 .menu li {
 	padding: 10px 0;
 	color:#77a466;
+
 }
 
 .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 21px;
+	line-height: 1.3125;
 }
 
 .address {
 	font-size: 1em;
-	line-height: 24px;
+	line-height: 1.5;
 }
 
 /*The widths are in a percentage!*/
@@ -214,16 +216,13 @@ header h1	{
 	/*Desktop styles here*/
 	.section-one, .section-two, .section-three	{
 		width: 33%;;
-		height: auto;
+	
 	}
 	.section-two {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
 	}
-		.section-two h4,
-		.section-three h4 {
-	padding: 10px 30px;
-}
+	
 	
 	header nav ul	{
 		display: flex;
@@ -237,17 +236,25 @@ header h1	{
 	}
 	header h1 	{
 		text-align: left;
-		font-size: 3em;
+		font-size: 2em;
 		border-bottom: none;
-		padding: 50px 0 0 0;
+		padding: 0;
+		border-bottom: none;
+		width: 30%;
 	
 	}
 	header	{
-		width: 100%
+		justify-content: space-between;
+		padding: 40px 0 40px 0;
 	
 	
 	}
 	header nav 	{
-		padding: 46px 0;
+		width:auto;
 	
 	}
+	.bottom-section	{
+		border-top: 1px solid #eee;
+	}
+
+	
